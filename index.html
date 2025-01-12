@@ -18,12 +18,21 @@
             <button class="call-type-button w-fit m-2 px-2 py-1 border-2 border-red-300 shadow-md shadow-red-300 rounded-md text-red-900 dark:text-red-200" id="moveTransfer">Move Out/In</button>
         </div>
     </header>
-    <main class="w-screen">
-        <div class="w-2/5 p-4 mx-auto inline-block">
-            <label class="mx-2" for="tagline">Tagline:</label>
-            <input type="text" class="rounded-sm w-3/5 px-2 py-1 bg-white dark:bg-slate-900" id="tagline"/>
+    <main class="w-screen flex flex-wrap justify-center">
+        <div class="w-96 p-4 mx-auto border-2 border-teal-300 dark:border-teal-800">
+            <label class="m-2" for="name">Name:</label>
+            <input type="text" class="rounded-sm w-3/5 m-2 px-2 py-1 bg-white dark:bg-slate-900" id="name"/>
+            <label class="m-2" for="account">Account#:</label>
+            <input type="text" class="rounded-sm w-3/5 m-2 px-2 py-1 bg-white dark:bg-slate-900" id="account"/>
+            <label class="m-2" for="reason">Reason for call:</label>
+            <textarea class="rounded-sm w-4/5 h-20 m-2 px-2 py-1 bg-white dark:bg-slate-900" id="reason"></textarea>
+            <label class="m-2" for="tagline">Tagline:</label>
+            <input type="text" class="rounded-sm w-3/5 m-2 px-2 py-1 bg-white dark:bg-slate-900" id="tagline"/>
         </div>
-        <div class="rounded-md border-2 border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-950 w-1/2 p-4 mx-auto inline-block">
+        <div class="rounded-md border-2 border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-950 w-96 p-4 mx-auto">
+            <p id="nameOutput">Name: </p>
+            <p id="nameOutput">Account#: </p>
+            <p id="reasonOutput">Reason for call: </p>
             <p id="taglineOutput">Tagline: </p>
         </div>
     </main>
